@@ -7,10 +7,21 @@
     <link rel="stylesheet" href="./css/common.css" />
   </head>
   <body>
-    <p><a href="./index.html">Go back</a></p>
+    <main class="page">
+      <section class="card">
+        <a class="back-link" href="./index.html">← Go back</a>
 
-    <button type="button" data-start>Start</button>
-    <button type="button" data-stop>Stop</button>
+        <h1 class="page-title">Color Switcher</h1>
+        <p class="page-subtitle">
+          Click start to change the background color automatically
+        </p>
+
+        <div class="controls">
+          <button type="button" data-start>Start</button>
+          <button type="button" data-stop>Stop</button>
+        </div>
+      </section>
+    </main>
 
     <script src="./js/01-color-switcher.js" type="module"></script>
   </body>
