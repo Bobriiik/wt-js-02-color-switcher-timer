@@ -11,32 +11,41 @@
     />
   </head>
   <body>
-    <p><a href="./index.html">Назад</a></p>
+    <main class="page">
+      <section class="card">
+        <a class="back-link" href="./index.html">← Назад</a>
 
-    <input type="text" id="datetime-picker" />
-    <button type="button" data-start>Start</button>
+        <h1 class="page-title">Countdown Timer</h1>
+        <p class="page-subtitle">Select a date and start the countdown</p>
 
-    <div class="timer">
-      <div class="field">
-        <span class="value" data-days>00</span>
-        <span class="label">Days</span>
-      </div>
+        <div class="controls">
+          <input type="text" id="datetime-picker" />
+          <button type="button" data-start>Start</button>
+        </div>
 
-      <div class="field">
-        <span class="value" data-hours>00</span>
-        <span class="label">Hours</span>
-      </div>
+        <div class="timer">
+          <div class="field">
+            <span class="value" data-days>00</span>
+            <span class="label">Days</span>
+          </div>
 
-      <div class="field">
-        <span class="value" data-minutes>00</span>
-        <span class="label">Minutes</span>
-      </div>
+          <div class="field">
+            <span class="value" data-hours>00</span>
+            <span class="label">Hours</span>
+          </div>
 
-      <div class="field">
-        <span class="value" data-seconds>00</span>
-        <span class="label">Seconds</span>
-      </div>
-    </div>
+          <div class="field">
+            <span class="value" data-minutes>00</span>
+            <span class="label">Minutes</span>
+          </div>
+
+          <div class="field">
+            <span class="value" data-seconds>00</span>
+            <span class="label">Seconds</span>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="./js/02-timer.js"></script>
